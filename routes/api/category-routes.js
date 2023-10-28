@@ -10,7 +10,6 @@ router.get('/', (req, res) => {
     include: [{
       model: Product
     }]
-    // This causing eager loading error
   }).then((categoryData) => {
     res.json(categoryData);
   }).catch((err) => {
